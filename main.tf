@@ -16,7 +16,7 @@ terraform {
 # each provider must be declared in the required providers section above
 provider "aws" {
   # profile = "default" //for local to tf cloud, wont work with gh to tf cloud workflow. default pulls the credentials from aws-cli. with gh to cloud workflow, it gets the access_key and secret_key from the variables you set in cloud.
-  region = "us-west-1a"
+  region = "us-west-1c"
 
 }
 
