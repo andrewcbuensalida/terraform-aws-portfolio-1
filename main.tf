@@ -15,7 +15,7 @@ terraform {
 }
 
 provider "aws" {
-  # profile = "default" //for local
+  # profile = "default" //for local to tf cloud, wont work with gh to tf cloud workflow
   region = "us-west-1"
 
 }
@@ -41,6 +41,6 @@ resource "aws_instance" "portfolio-1" {
               EOF
 
   tags = {
-    Name = "portfolio-1a"
+    Name = "portfolio-1b"
   }
 }
