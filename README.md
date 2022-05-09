@@ -5,3 +5,5 @@ https://learn.hashicorp.com/tutorials/terraform/aws-remote?in=terraform/aws-get-
 
 
 workflow: just push or pr to remote master in gh, terraform cloud should detect changes then auto apply.
+
+the other workflow is, just doing terraform apply on local, then it will update terraform cloud?

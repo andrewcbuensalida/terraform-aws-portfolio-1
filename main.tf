@@ -15,19 +15,12 @@ terraform {
 }
 
 provider "aws" {
-  profile = "default"
+  # profile = "default" //for local
   region = "us-west-1"
-  access_key = var.access_key
-  secret_key = var.secret_key
+
 }
 
-variable "access_key" {
-  
-}
 
-variable "secret_key" {
-  
-}
 resource "aws_instance" "portfolio-1" {
   ami           = "ami-01f87c43e618bf8f0"
   instance_type = "t2.micro"
