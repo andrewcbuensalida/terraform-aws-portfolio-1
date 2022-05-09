@@ -17,6 +17,8 @@ terraform {
 provider "aws" {
   profile = "default"
   region = "us-west-1"
+  access_key = var.access_key
+  secret_key = var.secret_key
 }
 
 resource "aws_instance" "portfolio-1" {
@@ -39,6 +41,6 @@ resource "aws_instance" "portfolio-1" {
               EOF
 
   tags = {
-    Name = "portfolio-1"
+    Name = "portfolio-1a"
   }
 }
